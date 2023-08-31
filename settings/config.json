@@ -1,0 +1,8 @@
+{
+  "token": "your discord bot token,and make sure you have allowed message intents",
+  "mongodb": "your mongodb url",
+  "developer": ["626413361185292321", "your discord ID", "62641336118529XXXX"],
+  "prefix": ">",
+  "testguild": "your discord server ID",
+  "support": "your discord server link"
+}
