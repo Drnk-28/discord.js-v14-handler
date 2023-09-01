@@ -14,7 +14,7 @@
     "discord"
   ],
   "author": "FuadJTM",
-  "license": "GNU",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FuadJTM/discord.js-v14-handler/issues"
   },
