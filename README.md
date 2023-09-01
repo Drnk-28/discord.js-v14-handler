@@ -60,7 +60,7 @@ node .
 ```
 
 #### congratulations, your bot is now online, and ready to be developed ...
-=================
+-----------------------------------------
 ## donation
 support me with 
 <details>
