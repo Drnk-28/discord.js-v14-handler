@@ -1,7 +1,7 @@
 const { Events, REST, Routes } = require("discord.js");
 const { readdirSync } = require("fs")
 const mongoose = require("mongoose")
-
+const Database = require("my-json-database")
 module.exports = async (client) => {
   try {
     let slashcommands = []
@@ -43,6 +43,15 @@ module.exports = async (client) => {
     // RELOAD SLASH COMMANDS....
     client.on(Events.ClientReady, async () => {
       try {
+        // so, if you don't like databases like mongodb, or SQL, or any other database, I recommend this database for you
+        client.db = new Database("../my-database.json", {
+          backups: {
+            enabled: true,
+            interval: 24 * 60 * 60 * 1000, // 24h
+            folder: "./backups/"
+          }
+        })
+        
         console.log(`started reload ${slashcommands.length} application commands..........`)
         /*
         
